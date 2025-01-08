@@ -127,6 +127,16 @@ h6 {
     /* 35px to rem */
 }
 
+.heading_3 {
+    font-weight: 700;
+    font-size:20px; /* Converted from 24px */
+    line-height: 24px /* Converted from 35px */
+}
+.heading_4{
+    font-weight: 700;
+    font-size:30px; /* Converted from 24px */
+    line-height: 20px; /* Converted from 35px */
+}
 .paragraph {
     font-weight: 400;
     font-size: 1rem;
@@ -318,8 +328,8 @@ h6 {
     margin-top: 13px;
     padding: 0px 18px;
     background-color: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid var(--text-black);
+    color:var(--text-black);
 }
 
 /* ------------------ banner section ------------------ */
@@ -422,6 +432,51 @@ h6 {
     font-weight: 400;
     color: var(--primary);
     margin: 17px 0;
+}
+
+/* ------------- Agenda section -------------   */
+#agenda-section .agenda_wrapper{
+    gap: 37px;
+    padding: 15px 0px;
+    border-bottom: 1px solid #F8F8F8 !important;
+}
+#agenda-section .agenda-left{
+    gap: 62px;
+}
+#agenda-section .agenda-right{
+    gap: 39px;
+}
+.agenda-right .button_wrapper{
+    padding: 8px 34px;
+}
+.agenda-right .time-text{
+    font-weight: 700 !important;
+}
+#agenda-section .arrow-icon-table img{
+    display: none ;
+}
+#agenda-section button.agenda-button{
+    display: block !important;
+    margin-left: 70px;
+}
+.first-line-table{
+    width: 100px;
+}
+.data-table{
+    width: 100%;
+        /* flex-direction: column; */
+        align-items: start !important;
+}
+.semi-title-agenda{
+    padding: 10px 0px;
+}
+.agenda-paragraph{
+    padding: 10px 0px;
+}
+.agenda-button-final{
+    padding: 10px 20px;
+    width: fit-content;
+    margin-top:15px;  
 }
 
 /* =========================================== Responsive =========================================== */
@@ -561,6 +616,13 @@ h6 {
     #banner-section .banner-button button{
         width: 100% !important;
     }
+    /* Agenda section responsive */
+    #agenda-section .agenda_wrapper{
+        gap: 10px;
+    }
+    #agenda-section button.agenda-button{
+        margin-left: 0px !important;
+    }
 
 }
 
@@ -601,7 +663,44 @@ h6 {
         font-size: 20px;
         min-height: 3.5rem;
     }
-}
+    /* ------------- Agenda section -------------   */
+    .agenda-left{
+        justify-items: start;
+    }
+    .agenda-right{
+        justify-items: end;
+    }
+    .data-table{
+        flex-direction: column;
+        align-items: start !important;
+    }
+    .agenda-wrapper .agenda-button{
+        display: none !important;
+    }
+    .agenda-wrapper .arrow-icon-table{
+        display: block !important;
+    }
+    #agenda-section .arrow-icon-table img{
+        display: block ;
+    }
+    #agenda-section button.agenda-button{
+        display: none !important;
+        /* all:unset !important; */
+    }
+    #agenda-section .agenda_wrapper{
+        gap: 10px !important;
+       
+    }
+    #agenda-section .agenda-right{
+        gap: 15px;
+    }
+    .agenda-paragraph{
+        padding-top: 30px;
+    }
+    .agenda-button-final{
+        width: auto;
+        text-align: center !important;  
+    }
 
 @media (max-width: 425px) {
     .container {
@@ -648,4 +747,5 @@ h6 {
         padding: 0px 10px;
     }
 
+}
 }
