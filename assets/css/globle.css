@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Heebo:wght@100..900&display=swap");
 
 :root {
-  --primary: #ed6e37;
-  --primary-light: #fff4ef;
-  --section-bg: #f8f8f8;
-  --button-bg: #3ba5db;
-  --header-footer: #293133;
-  --text-light: #ffffff;
-  --text-black: #293133;
-  --text-gray: #4d4d4d;
-  --text-red: #ff0000;
+    --primary: #ed6e37;
+    --primary-light: #fff4ef;
+    --section-bg: #f8f8f8;
+    --button-bg: #3ba5db;
+    --header-footer: #293133;
+    --text-light: #ffffff;
+    --text-black: #293133;
+    --text-gray: #4d4d4d;
+    --text-red: #ff0000;
+    --line-pink: #BC1C5E;
+    --line-blue:#3AA4DB;
+    --line-green:#93C01F;
+
 }
 
 body {
@@ -132,13 +136,16 @@ h6 {
   line-height: 2.1875rem;
   /* 35px to rem */
 }
+.heading_email{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
 
 .heading_3 {
-  font-weight: 700;
-  font-size: 20px;
-  /* Converted from 24px */
-  line-height: 24px;
-  /* Converted from 35px */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .heading_4 {
@@ -793,6 +800,60 @@ h6 {
 .w-100 {
   width: 100%;
 }
+/* -------------------------- email opt-in section css -------------------------- */
+#email-opt-in-section{
+    background-color: var(--primary-light);
+    padding: 30px 14px !important;
+    position: relative;
+}
+#email-opt-in-section .colorline-first{
+    display: none;
+}
+#email-opt-in-section .colorline-second{
+    display: block;
+}
+
+
+#email-opt-in-section p{
+    width: 461px;
+}
+/* #email-opt-in-section .input-email{
+   width: 100%;
+} */
+#email-opt-in-section .email-opt-in-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content:space-between;
+  gap: 27px;
+  position: relative;
+}
+
+#email-opt-in-section input{
+   width: 354px;
+   padding: 17px 13px;
+   border: none;
+ }
+ #email-opt-in-section .email-button{
+    padding: 7px 35px;
+ }
+#email-opt-in-section .colorful-border {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right,
+            var(--primary) 0%,
+            var(--primary) 25%,
+            #bc1c5e 25%,
+            #bc1c5e 50%,
+            var(--button-bg) 50%,
+            var(--button-bg) 75%,
+            #93c01f 75%,
+            #93c01f 100%);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
 
 
 /* -------------------Footer section ------------------- */
@@ -1039,6 +1100,10 @@ h6 {
   .teacher-content {
     width: 82%;
   }
+    /* email opt-in section responsive */
+    #email-opt-in-section p{
+        width: 350px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1191,6 +1256,25 @@ h6 {
   .teacher-profile {
     flex-wrap: wrap;
   }
+    /* email opt-in section responsive */
+    #email-opt-in-section input{
+        width: 240px;
+        padding: 17px 10px;
+        border: none;
+      }
+      #email-opt-in-section .email-button{
+         padding: 7px 20px;
+      }
+      #email-opt-in-section .colorline-first{
+        display: block;
+    }
+    #email-opt-in-section .colorline-second{
+        display: none;
+    }
+    #email-opt-in-section .colorful-border {
+        
+        top:0px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -1236,7 +1320,15 @@ h6 {
     padding: 0px 10px;
   }
 
-  .right-section {
-    width: 100%;
-  }
+    .right-section {
+        width: 100%;
+    }
+    #email-opt-in-section input{
+        width: 200px;
+        padding: 17px 5px;
+        border: none;
+      }
+      #email-opt-in-section .email-button{
+         padding: 7px 15px;
+      }
 }
