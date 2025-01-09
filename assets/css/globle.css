@@ -113,6 +113,10 @@ h6 {
     background-color: var(--header-footer);
     color: var(--text-light);
 }
+input:focus {
+    outline: none; 
+    border: none; 
+}
 
 /* --------------------- Button --------------------- */
 
@@ -884,10 +888,9 @@ h6 {
     width: 461px;
 }
 
-
-/* #email-opt-in-section .input-email{
-   width: 100%;
-} */
+#email-opt-in-section .input-email{
+   position: relative;
+}
 #email-opt-in-section .email-opt-in-container {
     display: flex;
     flex-direction: column;
@@ -904,6 +907,8 @@ h6 {
 }
 
 #email-opt-in-section .email-button {
+    position: absolute;
+    /* right: 0; */
     padding: 7px 35px;
 }
 
