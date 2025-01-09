@@ -503,7 +503,7 @@ h6 {
     margin-top: 15px;
 }
 
-/* ------------- Testimonial section -------------   */
+/* ------------- Testimonial section & second testimonial section -------------   */
 #testimonial-section .testimonial-section,
 #testimonial-section-second .testimonial-section {
     background-color: var(--section-bg);
@@ -792,7 +792,61 @@ h6 {
     width: 100%;
 }
 
-/* ------------- second Testimonial section -------------   */
+
+/* -------------------Footer section ------------------- */
+
+#footer-section {
+    padding: 27px 0;
+}
+
+.main-footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+    gap: 200px; /* Space between columns */
+    padding: 27px 0;
+}
+
+.footer-content {
+    grid-column: 1; /* Place in the first column */
+    align-items: start;
+}
+
+.footer-links {
+    grid-column: 2; /* Place in the second column */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: var(--text-light); /* Change as needed */
+    text-decoration: none;
+    /* margin: 5px 0; */
+}
+.footer-links div{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social {
+    grid-column: 4; /* Place in the third column */
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Center items vertically */
+    gap: 10px; /* Space between text and icons */
+}
+
+.footer-social .social-icons {
+    display: flex;
+    /* width: 100; */
+    gap: 10px; /* Space between icons */
+}
+
+#footer-section .paragraph {
+    color: var(--text-light);
+    line-height: 28px;
+}
+
 
 /* =========================================== Responsive =========================================== */
 
@@ -835,6 +889,10 @@ h6 {
 
     .display-none-full-screen {
         display: none;
+    }
+    /* footer section responsive */
+    .main-footer-container {
+        gap: 100px; 
     }
 }
 
@@ -928,6 +986,10 @@ h6 {
 
     #banner-section .banner-button button {
         width: 100% !important;
+    }
+    /* footer section responsive */
+    .main-footer-container {
+        gap: 40px; 
     }
 }
 
@@ -1053,6 +1115,25 @@ h6 {
     #testimonial-section .reviews-text-mobile,
     #testimonial-section-second .reviews-text-mobile {
         display: block;
+    }
+
+    /* Footer section responsive */
+    .main-footer-container {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+    }
+    .footer-links, .footer-content, .footer-social{
+        grid-column: 1;
+    }
+    .footer-content{
+        gap: 27px;
+    }
+    .footer-social .social-icons a{
+        width: 42px;
+        height: 42px;
+    }
+    .footer-social .social-icons img{
+        width: 100%;
+        height: 100%;
     }
 }
 
