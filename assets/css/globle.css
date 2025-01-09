@@ -139,20 +139,26 @@ h6 {
 
 .heading_email {
     font-weight: 700;
-    font-size: 3.125rem; /* 50px to rem */
-    line-height: 3.75rem; /* 60px to rem */
+    font-size: 3.125rem;
+    /* 50px to rem */
+    line-height: 3.75rem;
+    /* 60px to rem */
 }
 
 .heading_3 {
     font-weight: 700;
-    font-size: 1.25rem; /* 20px to rem */
-    line-height: 1.5rem; /* 24px to rem */
+    font-size: 1.25rem;
+    /* 20px to rem */
+    line-height: 1.5rem;
+    /* 24px to rem */
 }
 
 .heading_4 {
     font-weight: 700;
-    font-size: 1.875rem; /* 30px to rem */
-    line-height: 2.1875rem; /* 35px to rem */
+    font-size: 1.875rem;
+    /* 30px to rem */
+    line-height: 2.1875rem;
+    /* 35px to rem */
 }
 
 
@@ -511,14 +517,18 @@ h6 {
 }
 
 /* ------------- Testimonial section & second testimonial section -------------   */
-#testimonial-section .testimonial-section,
-#testimonial-section-second .testimonial-section {
+#testimonial-section .testimonial-section {
     background-color: var(--section-bg);
 }
 
 #testimonial-section .main-testimonial,
 #testimonial-section-second .main-testimonial {
     padding: 25px;
+}
+
+#testimonial-section-second .main-testimonial {
+    background-color: var(--section-bg);
+    width: 70%;
 }
 
 #testimonial-section .testimonial-heading,
@@ -1145,6 +1155,11 @@ h6 {
         display: block;
     }
 
+    /* testimonial section responsive */
+    #testimonial-section-second .main-testimonial {
+        width: auto;
+    }
+
     /* banner section responsive */
 
     #banner-section .main-banner-container {
@@ -1176,6 +1191,7 @@ h6 {
         font-size: 24px;
         line-height: 24px;
     }
+
     .main-help-container {
         gap: 50px;
     }
@@ -1331,6 +1347,7 @@ h6 {
         display: block;
     }
 
+
     /* -------------------------- Haptotherapie helpen section css -------------------------- */
     .main-help-container {
         flex-direction: column;
@@ -1342,8 +1359,9 @@ h6 {
         grid-template-columns: 1fr;
         /* Stack on smaller screens */
     }
-    #haptotherapie-helpen-section .heading_help{
-       margin-bottom: 25px;
+
+    #haptotherapie-helpen-section .heading_help {
+        margin-bottom: 25px;
     }
 
     .footer-links,
@@ -1455,7 +1473,8 @@ h6 {
     .right-section {
         width: 100%;
     }
-    #email-opt-in-section .input-email{
+
+    #email-opt-in-section .input-email {
         width: 100%;
         display: flex;
         flex-direction: column;
