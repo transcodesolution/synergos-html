@@ -1231,6 +1231,9 @@ input:focus {
         font-size: 30px;
         line-height: 30px;
     }
+    #banner-section .button_wrapper{
+        width: 100%;
+    }
 
     /* announcement-bar responsive */
     .announcement-bar {
