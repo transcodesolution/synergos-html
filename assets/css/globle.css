@@ -210,9 +210,9 @@ input:focus {
 
 #header input {
     border-radius: 5px;
-    width: 22.5rem !important;
-    padding: 8px 10px;
+    max-width: 22.5rem !important;
     width: 100%;
+    padding: 8px 10px;
     border: none;
     background-color: #eeeeee;
 }
