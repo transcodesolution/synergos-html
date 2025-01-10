@@ -1431,8 +1431,18 @@ input:focus {
 
     .heading_1 {
         font-weight: 700;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+    .highlight-section .stars img
+    {
+        gap: 6px;
+    }
+    .highlight-section .stars img
+    {
+        margin-right: 0px !important;
+        width: 24px;    
+        height: 24px;
     }
 
     .heading_3 {
