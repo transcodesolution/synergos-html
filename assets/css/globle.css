@@ -75,7 +75,6 @@ h6 {
 
 .container {
     max-width: 78.375rem;
-    /* Converted from 1254px */
     width: 100%;
     margin: 0 auto;
 }
@@ -128,10 +127,8 @@ input:focus {
     background-color: transparent;
     color: white;
     font-size: 1.125rem;
-    /* Converted from 18px */
     font-weight: 700;
     line-height: 2.1875rem;
-    /* Converted from 35px */
 }
 
 /* --------------------- Typography --------------------- */
@@ -144,53 +141,41 @@ input:focus {
 .header-font {
     font-weight: 800;
     font-size: 1.25rem;
-    /* 20px to rem */
     line-height: 2.1875rem;
-    /* 35px to rem */
 }
 
 .heading_email {
     font-weight: 700;
     font-size: 3.125rem;
-    /* 50px to rem */
     line-height: 3.75rem;
-    /* 60px to rem */
 }
 
 .heading_3 {
     font-weight: 700;
     font-size: 1.25rem;
-    /* 20px to rem */
     line-height: 1.5rem;
-    /* 24px to rem */
 }
 
 .heading_4 {
     font-weight: 700;
     font-size: 1.875rem;
-    /* 30px to rem */
     line-height: 2.1875rem;
-    /* 35px to rem */
 }
 
 .paragraph {
     font-weight: 400;
     font-size: 1rem;
-    /* Converted from 16px */
     line-height: 1.5rem;
-    /* Converted from 24px */
 }
 
 .button-font {
     font-weight: 700;
     font-size: 1.125rem;
-    /* Converted from 18px */
     line-height: 2.1875rem;
-    /* Converted from 35px */
 }
 
 .bottom-links {
-    padding-top: 16px;
+    padding-top: 1rem;
 }
 
 .bottom-links a {
@@ -200,21 +185,21 @@ input:focus {
 
 /* --------------------- Header --------------------- */
 #header p {
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
     opacity: 0.5;
 }
 
 #header .header {
-    gap: 25px;
+    gap: 73px;
 }
 
 #header .search-container {
-    padding: 0px;
+    padding: 0rem;
     border-radius: 5px;
     background-color: #eeeeee;
-    width: 360px !important;
-    margin: 8px 10px;
+    width: 22.5rem !important;
+    margin: 0.5rem 0.625rem;
     position: relative;
 }
 
@@ -225,7 +210,7 @@ input:focus {
 
 #header input {
     border-radius: 5px;
-    width: 360px !important;
+    width: 22.5rem !important;
     padding: 8px 10px;
     width: 100%;
     border: none;
@@ -265,7 +250,6 @@ input:focus {
 /* header-container */
 .logo img {
     width: 13.760625rem;
-    /* Converted from 220.17px */
 }
 
 .header-container {
@@ -285,18 +269,13 @@ input:focus {
 
 .dropdown-menu {
     display: none;
-    /* Initially hidden */
     position: absolute;
-    /* Positioning */
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Shadow for depth */
     z-index: 1000;
     height: 100vh;
     transition: max-height 0.3s ease;
-    /* Smooth transition */
     overflow: hidden;
-    /* Prevent overflow */
 }
 
 .dropdown-menu.show {
@@ -313,7 +292,6 @@ input:focus {
 
 .dropdown-menu a {
     text-decoration: none;
-    /* Remove underline */
     color: #333;
     padding: 5px 0px;
     display: block;
@@ -335,8 +313,8 @@ input:focus {
     position: relative;
     padding: 10px;
     background-color: transparent;
-    width: 18px;
-    height: 18px;
+    width: 1.125rem; 
+    height: 1.125rem;
     border: 2px solid #707070;
     border-radius: 4px;
     color: black;
@@ -387,7 +365,7 @@ input:focus {
 
 .heading_2 {
     color: var(--text-black);
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
 }
 
@@ -420,8 +398,8 @@ input:focus {
 }
 
 .grid-item .card_Image {
-    height: 355px;
-    width: 355px;
+    height: 22.188rem;
+    width: 22.188rem;
 }
 
 .reviews {
@@ -454,7 +432,7 @@ input:focus {
 }
 
 .time_text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--primary);
     margin: 23px 0;
@@ -492,12 +470,11 @@ input:focus {
 }
 
 .first-line-table {
-    width: 100px;
+    width: 6.25rem;
 }
 
 .data-table {
     width: 100%;
-    /* flex-direction: column; */
     align-items: start !important;
 }
 
@@ -575,7 +552,6 @@ input:focus {
 
 .highlight-section {
     background-image: url("/assets/images/cardbgImg.png");
-    /* Add your background image */
     background-size: cover;
     background-position: center;
     min-height: 445px;
@@ -611,15 +587,15 @@ input:focus {
 }
 
 .stars img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 5px;
 }
 
 .error_text {
     color: var(--text-red);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .info-card button {
@@ -629,7 +605,7 @@ input:focus {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .colorful-border {
@@ -833,8 +809,8 @@ input:focus {
 }
 
 #vvh-section .heading_4 {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 2.188rem;
+    line-height: 2.188rem;
 }
 
 #vvh-section .vvh-container {
@@ -851,7 +827,7 @@ input:focus {
 }
 
 #vvh-section .imag-vvh img {
-    min-width: 162px;
+    min-width: 10.125rem;
     width: 100%;
 }
 
@@ -871,7 +847,7 @@ input:focus {
 }
 
 #email-opt-in-section p {
-    width: 461px;
+    width: 28.813rem;
 }
 
 #email-opt-in-section .input-email {
@@ -888,7 +864,7 @@ input:focus {
 }
 
 #email-opt-in-section input {
-    width: 354px;
+    width: 22.125rem;
     padding: 17px 13px;
     border: none;
 }
@@ -925,30 +901,24 @@ input:focus {
 .main-footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Three equal columns */
     gap: 200px;
-    /* Space between columns */
     padding: 27px 0;
 }
 
 .footer-content {
     grid-column: 1;
-    /* Place in the first column */
     align-items: start;
 }
 
 .footer-links {
     grid-column: 2;
-    /* Place in the second column */
     display: flex;
     flex-direction: column;
 }
 
 .footer-links a {
     color: var(--text-light);
-    /* Change as needed */
     text-decoration: none;
-    /* margin: 5px 0; */
 }
 
 .footer-links div {
@@ -959,26 +929,23 @@ input:focus {
 
 .footer-social {
     grid-column: 4;
-    /* Place in the third column */
     display: flex;
     flex-direction: column;
     align-items: start;
-    /* Center items vertically */
     gap: 10px;
-    /* Space between text and icons */
 }
 
 .footer-social .social-icons {
     display: flex;
-    /* width: 100; */
     gap: 10px;
-    /* Space between icons */
 }
 
 #footer-section .paragraph {
     color: var(--text-light);
     line-height: 28px;
 }
+
+/*  teacher section css start */
 
 .teacher-bannerImage {
     width: 100%;
@@ -1027,8 +994,6 @@ input:focus {
     gap: 2em;
 }
 
-/*  teacher section css start */
-
 /*  teacher section css end*/
 
 /* =========================================== Responsive =========================================== */
@@ -1042,12 +1007,12 @@ input:focus {
     }
 
     #header .header {
-        gap: 15px;
+        gap: 70px;
     }
 
     /* header-container responsive */
     .logo img {
-        width: 150px !important;
+        width: 200px !important;
     }
 
     #header .search-container {
@@ -1085,6 +1050,9 @@ input:focus {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    #header .header {
+        gap: 55px;
+    }
 
     /* banner section responsive */
     #banner-section .banner-image {
@@ -1105,19 +1073,19 @@ input:focus {
     /* announcement-bar responsive */
     .announcement-bar {
         padding: 0.5rem 0;
-        /* Converted from 8px */
         font-size: 0.9375rem !important;
-        /* Converted from 15px */
     }
 
     /* header-container responsive */
     .logo img {
         width: 9.375rem !important;
-        /* Converted from 150px */
     }
 
     #agenda-section button.agenda-button {
         margin-left: 0px;
+    }
+    .click-open-menu {
+        padding: 0px 35px;
     }
 
 
@@ -1187,8 +1155,8 @@ input:focus {
     #haptotherapie-helpen-section .heading_4 {
         margin-bottom: 30px;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
     .main-help-container {
@@ -1233,14 +1201,13 @@ input:focus {
     }
     #banner-section .button_wrapper{
         width: 100%;
+        padding: 16px 20px;
     }
 
     /* announcement-bar responsive */
     .announcement-bar {
         padding: 0.5rem 0;
-        /* Converted from 8px */
         font-size: 0.9375rem !important;
-        /* Converted from 15px */
     }
 
     .grid-item img {
@@ -1304,7 +1271,6 @@ input:focus {
 
     #agenda-section button.agenda-button {
         display: none !important;
-        /* all:unset !important; */
     }
 
     #agenda-section .agenda_wrapper {
@@ -1372,7 +1338,7 @@ input:focus {
     /* Footer section responsive */
     .main-footer-container {
         grid-template-columns: 1fr;
-        /* Stack on smaller screens */
+        padding: 0rem;
     }
 
     #haptotherapie-helpen-section .heading_help {
@@ -1409,7 +1375,7 @@ input:focus {
 
     /* email opt-in section responsive */
     #email-opt-in-section input {
-        width: 240px;
+        width: 15rem;
         padding: 17px 10px;
         border: none;
     }
@@ -1448,8 +1414,8 @@ input:focus {
 
     .paragraph {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 
     .heading_1 {
@@ -1460,30 +1426,29 @@ input:focus {
 
     .heading_3 {
         font-weight: 400;
-        font-size: 18px;
-        line-height: 35px;
+        font-size: 1.125rem;
+        line-height: 2.188rem;
     }
 
     .agenda_wrapper .heading_3 {
         font-weight: 700;
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 1.188rem;
+        line-height: 1.5rem;
     }
     #email-opt-in-section .heading_email {
         font-weight: 700;
-        font-size: 30px !important;
-        line-height: 30px !important;
+        font-size: 1.875rem !important;
+        line-height: 1.875rem !important;
     }
 
     #testimonial-section .heading_3 {
         font-weight: 700;
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 1.25rem;
+        line-height: 2.188rem;
     }
 
     #agenda-section .heading_1 {
-        line-height: 39px;
-        line-height: 20px;
+        line-height: 39.36px;
     }
 
     .time_text {
@@ -1554,7 +1519,7 @@ input:focus {
     /* header-container responsive */
     .logo img {
         max-width: 5.5rem;
-        /* Converted from 88px */
+        width: 100% !important;
     }
 
     .header-container {
@@ -1678,6 +1643,7 @@ input:focus {
         width: 250px;
     }
 
+
 }
 
 @media (max-width: 375px) {
@@ -1692,6 +1658,9 @@ input:focus {
     .info-card {
         max-width: 250px;
         bottom: -7rem;
+    }
+    #announcement-bar .announcement-bar{
+        font-size: 0.70rem !important;
     }
     #vvh-section .imag-vvh {
         width: min-content;
