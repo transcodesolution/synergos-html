@@ -592,7 +592,7 @@ input:focus {
 .stars img {
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .error_text {
@@ -867,7 +867,7 @@ input:focus {
 }
 
 #email-opt-in-section input {
-    width: 22.125rem;
+    width: 20.475rem;
     padding: 17px 13px;
     border: none;
 }
@@ -1392,6 +1392,7 @@ input:focus {
     }
 
     #email-opt-in-section .email-button {
+        position: absolute;
         padding: 7px 20px;
     }
 
@@ -1569,22 +1570,22 @@ input:focus {
         width: 100%;
     }
 
-    #email-opt-in-section .input-email {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
 
     #email-opt-in-section input {
-        width: -webkit-fill-available;
-        padding: 17px 5px;
+        width: 12rem;
+        padding: 10px 19px;
         border: none;
     }
-
     #email-opt-in-section .email-button {
-        padding: 7px 15px;
-        width: 100%;
+        padding: 0px 8px;
+        position: absolute;
+    }
+    #email-opt-in-section .button_wrapper {
+        font-size: 14px;
+        line-height: 35px;
+    }
+    #email-opt-in-section p {
+        width: 250px;
     }
 
     .responsive-container {
@@ -1660,13 +1661,6 @@ input:focus {
         font-size: 2rem;
         line-height: 1.1em;
     }
-    #email-opt-in-section .email-button {
-        position: relative;
-    }
-    #email-opt-in-section p {
-        width: 250px;
-    }
-
 
 }
 
@@ -1675,7 +1669,22 @@ input:focus {
         max-width: 305px;
         bottom: -7rem;
     }
-  
+    #email-opt-in-section .input-email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #email-opt-in-section input{
+        width: -webkit-fill-available;
+    }
+    #email-opt-in-section .email-button {
+        position: relative;
+        font-size: 14px;
+        padding: 0px 15px;
+        width: 100%;
+    }
+ 
 }
 
 @media (max-width: 320px) {
