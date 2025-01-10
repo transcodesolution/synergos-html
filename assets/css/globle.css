@@ -31,7 +31,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+td {
     padding: 0;
     margin: 0;
     color: var(--text-black);
@@ -188,6 +189,7 @@ input:focus {
     padding: 0rem;
     margin: 0rem;
     opacity: 0.5;
+    color: var(--text-light);
 }
 
 #header .header {
@@ -483,6 +485,8 @@ input:focus {
 
 .semi-title-agenda {
     padding: 10px 0px;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .agenda-paragraph {
@@ -641,7 +645,7 @@ input:focus {
 .schedule-details {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
 }
 
 .schedule-info {
@@ -1468,6 +1472,11 @@ input:focus {
         font-size: 1.25rem;
         line-height: 2.188rem;
     }
+    #testimonial-section-second .heading_3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 2.188rem;
+    }
 
     #agenda-section .heading_1 {
         line-height: 39.36px;
@@ -1661,7 +1670,10 @@ input:focus {
         font-size: 2rem;
         line-height: 1.1em;
     }
-
+.schedule-table tr{
+    display: flex;
+    flex-direction: column;
+}
 }
 
 @media (max-width: 375px) {
