@@ -506,7 +506,7 @@ input:focus {
     margin-top: 15px;
 }
 
-/* ------------- Testimonial section & second testimonial section -------------   */
+/* ------------- Testimonial section -------------   */
 #testimonial-section .testimonial-section {
     background-color: var(--section-bg);
 }
@@ -525,8 +525,8 @@ input:focus {
     gap: 31px;
 }
 
-#testimonial-section .testimonial-text-image img{
-    padding-top: 10px;
+#testimonial-section .testimonial-image{
+    margin-right: auto;
 }
 
 #testimonial-section .reviews {
