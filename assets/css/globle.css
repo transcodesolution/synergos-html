@@ -184,6 +184,12 @@ input:focus {
 
 
 /* --------------------- Header --------------------- */
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 #header p {
     padding: 0rem;
     margin: 0rem;
@@ -268,21 +274,22 @@ input:focus {
 }
 
 .dropdown-menu {
-    display: none;
     position: absolute;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     height: 100vh;
+    width: 100%;
     transition: max-height 0.3s ease;
     overflow: hidden;
+    display: block;
+    top: 0;
+    right: 100%;
+    transform: translateX(0);
 }
 
 .dropdown-menu.show {
-    display: block;
-    width: 100%;
-    left: 0;
-    top: 0;
+    transform: translateX(100%);
 }
 
 .dropdown-menu li {
@@ -365,7 +372,7 @@ input:focus {
 
 .heading_2 {
     color: var(--text-black);
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     font-weight: 400;
 }
 
@@ -483,6 +490,7 @@ input:focus {
 
 .semi-title-agenda {
     padding: 10px 0px;
+    font-weight: 400;
 }
 
 .agenda-paragraph {
@@ -500,54 +508,41 @@ input:focus {
     background-color: var(--section-bg);
 }
 
-#testimonial-section .main-testimonial,
-#testimonial-section-second .main-testimonial {
-    padding: 25px;
+#testimonial-section .main-testimonial {
+    padding: 1rem;
 }
 
-#testimonial-section-second .main-testimonial {
-    background-color: var(--section-bg);
-    width: 70%;
-}
-
-#testimonial-section .testimonial-heading,
-#testimonial-section-second .testimonial-heading {
+#testimonial-section .testimonial-heading {
     line-height: 35px;
 }
 
-#testimonial-section .testimonial-text-image,
-#testimonial-section-second .testimonial-text-image {
+#testimonial-section .testimonial-text-image {
     display: flex;
     justify-content: space-between;
     gap: 31px;
 }
 
-#testimonial-section .testimonial-text-image img,
-#testimonial-section-second .testimonial-text-image img {
+#testimonial-section .testimonial-text-image img{
     padding-top: 10px;
 }
 
-#testimonial-section .reviews,
-#testimonial-section-second .reviews {
+#testimonial-section .reviews {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-#testimonial-section .stars,
-#testimonial-section-second .stars {
+#testimonial-section .stars {
     display: flex;
     gap: 7px;
 }
 
-#testimonial-section .reviews-text,
-#testimonial-section-second .reviews-text {
+#testimonial-section .reviews-text {
     display: block;
 }
 
-#testimonial-section .reviews-text-mobile,
-#testimonial-section-second .reviews-text-mobile {
+#testimonial-section .reviews-text-mobile {
     display: none;
 }
 
@@ -1129,10 +1124,6 @@ input:focus {
         display: block;
     }
 
-    /* testimonial section responsive */
-    #testimonial-section-second .main-testimonial {
-        width: auto;
-    }
 
     /* banner section responsive */
 
@@ -1318,25 +1309,21 @@ input:focus {
     }
 
     /* Testimonial section responsive */
-    #testimonial-section .testimonial-text-image,
-    #testimonial-section-second .testimonial-text-image {
+    #testimonial-section .testimonial-text-image {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    #testimonial-section .testimonial-text-image img,
-    #testimonial-section-second .testimonial-text-image img {
+    #testimonial-section .testimonial-text-image img {
         padding-top: 0px;
     }
 
-    #testimonial-section .reviews-text,
-    #testimonial-section-second .reviews-text {
+    #testimonial-section .reviews-text {
         display: none;
     }
 
-    #testimonial-section .reviews-text-mobile,
-    #testimonial-section-second .reviews-text-mobile {
+    #testimonial-section .reviews-text-mobile {
         display: block;
     }
 
@@ -1485,18 +1472,15 @@ input:focus {
         gap: 0px !important;
     }
 
-    #testimonial-section .reviews .testimonial-heading,
-    #testimonial-section-second .reviews .testimonial-heading {
+    #testimonial-section .reviews .testimonial-heading {
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
     }
-    #testimonial-section .reviews,
-    #testimonial-section-second .reviews{
+    #testimonial-section .reviews {
         gap: 2px;
     }
-    #testimonial-section .stars,
-    #testimonial-section-second .stars{
+    #testimonial-section .stars {
         gap: 0px;
     }
 
