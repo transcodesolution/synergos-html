@@ -60,6 +60,9 @@ td {
 
 /* common css classes */
 
+.main-divider{
+    padding-top: 0.875rem;
+}
 
 .section-space {
     padding: 1rem !important;
@@ -433,6 +436,10 @@ input:focus {
     margin-bottom: 24px;
 }
 
+.btn-w{
+    width: 355px;
+}
+
 .button_wrapper {
     background-color: var(--button-bg);
     color: var(--text-light);
@@ -491,7 +498,7 @@ input:focus {
 }
 
 .semi-title-agenda {
-    padding: 10px 0px;
+     padding: 20px 0px 10px 0;
     font-weight: 400;
     font-size: 1.5rem;
 }
@@ -506,50 +513,79 @@ input:focus {
     margin-top: 15px;
 }
 
+.gray-text{
+    color:#29313340;
+}
+
 /* ------------- Testimonial section -------------   */
 #testimonial-section .testimonial-section {
     background-color: var(--section-bg);
 }
 
-#testimonial-section .main-testimonial {
-    padding: 1rem;
+#testimonial-section .main-testimonial,
+#testimonial-section-second .main-testimonial {
+    padding: 25px;
 }
 
-#testimonial-section .testimonial-heading {
+#testimonial-section-second .main-testimonial {
+    background-color: var(--section-bg);
+    width: 70%;
+}
+
+#testimonial-section .testimonial-heading,
+#testimonial-section-second .testimonial-heading {
     line-height: 35px;
 }
 
-#testimonial-section .testimonial-text-image {
+#testimonial-section .testimonial-text-image,
+#testimonial-section-second .testimonial-text-image {
     display: flex;
     justify-content: space-between;
     gap: 31px;
 }
 
-#testimonial-section .testimonial-image{
-    margin-right: auto;
+#testimonial-section .testimonial-text-image img,
+#testimonial-section-second .testimonial-text-image img {
+    padding-top: 10px;
 }
 
-#testimonial-section .reviews {
+#testimonial-section .reviews,
+#testimonial-section-second .reviews {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-#testimonial-section .stars {
+#testimonial-section .stars,
+#testimonial-section-second .stars {
     display: flex;
     gap: 7px;
 }
 
-#testimonial-section .reviews-text {
+#testimonial-section .reviews-text,
+#testimonial-section-second .reviews-text {
     display: block;
 }
 
-#testimonial-section .reviews-text-mobile {
+#testimonial-section .reviews-text-mobile,
+#testimonial-section-second .reviews-text-mobile {
     display: none;
 }
-
 /* info section css */
+
+.overflow-hide{
+    overflow: hidden;
+}
+
+.highligt-img{
+    position: relative;
+}
+
+.info-section{
+    position: relative;
+    width: 100%;
+}
 
 .highlight-section {
     background-image: url("/assets/images/cardbgImg.png");
@@ -1312,23 +1348,33 @@ input:focus {
     }
 
     /* Testimonial section responsive */
-    #testimonial-section .testimonial-text-image {
+   #testimonial-section .testimonial-text-image,
+    #testimonial-section-second .testimonial-text-image {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    #testimonial-section .testimonial-text-image img {
+    #testimonial-section .testimonial-text-image img,
+    #testimonial-section-second .testimonial-text-image img {
         padding-top: 0px;
     }
 
-    #testimonial-section .reviews-text {
+    #testimonial-section .reviews-text,
+    #testimonial-section-second .reviews-text {
         display: none;
     }
 
-    #testimonial-section .reviews-text-mobile {
+    #testimonial-section .reviews-text-mobile,
+    #testimonial-section-second .reviews-text-mobile {
         display: block;
     }
+
+    #testimonial-section-second .main-testimonial{
+    width: auto;
+    }
+
+    
 
     /* -------------------------- Haptotherapie helpen section css -------------------------- */
     .main-help-container {
@@ -1590,7 +1636,7 @@ input:focus {
     }
 
     .info-card {
-        max-width: 357px;
+        max-width: 352px;
         bottom: -8rem;
     }
 
