@@ -582,7 +582,6 @@ input:focus {
 
 .info-section {
   position: relative;
-  width: 100%;
 }
 
 .highlight-section {
@@ -768,7 +767,7 @@ input:focus {
   width: 30%; /* Ensure consistent width */
   max-width: 360px; /* Set a max width if needed */
   position: sticky;
-  top: 0;
+  top: 230px;
   align-self: flex-start;
   box-sizing: border-box;
 }
